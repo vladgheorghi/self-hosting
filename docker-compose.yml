@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  jellyfin:
+    image: jellyfin/jellyfin:${JELLYFIN_VERSION}
+    container_name: jellyfin
+    network_mode: host
+    environment:
+      - TZ=Europe/Bucharest
+    volumes:
+      - ./services/jellyfin/config:/config
+      - ./services/jellyfin/cache:/cache
+      - ./services/jellyfin/media:/media
+    restart: unless-stopped
+

@@ -10,6 +10,10 @@ services/jellyfin/config/
 services/jellyfin/cache/
 services/jellyfin/media/
 
+# qBitTorrent downloads and config data (bind-mounted folders)
+services/qbittorrent/config
+services/qbittorrent/downloads
+
 # OS and editor specific
 .DS_Store
 Thumbs.db

@@ -6,9 +6,9 @@ docker-compose.override.yml
 .env.*
 
 # Jellyfin media and config data (bind-mounted folders)
-jellyfin/config/
-jellyfin/cache/
-jellyfin/media/
+services/jellyfin/config/
+services/jellyfin/cache/
+services/jellyfin/media/
 
 # OS and editor specific
 .DS_Store

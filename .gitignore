@@ -5,6 +5,9 @@ docker-compose.override.yml
 .env
 .env.*
 
+# shared folder between Jellyfin and qBitTorrent for downloaded media
+.media/
+
 # Jellyfin media and config data (bind-mounted folders)
 services/jellyfin/config/
 services/jellyfin/cache/

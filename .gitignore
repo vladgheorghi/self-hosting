@@ -1,0 +1,28 @@
+# Docker related
+*.pid
+*.log
+docker-compose.override.yml
+.env
+.env.*
+
+# Jellyfin media and config data (bind-mounted folders)
+jellyfin/config/
+jellyfin/cache/
+jellyfin/media/
+
+# OS and editor specific
+.DS_Store
+Thumbs.db
+
+# Node / Python (if you use them elsewhere in the repo)
+node_modules/
+__pycache__/
+
+# Backup or temp files
+*.bak
+*.tmp
+*~
+
+# Systemd service files (optional)
+*.service
+
